@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Products List Page";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h2>Product List :</h2>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <a asp-asp-controller="product" asp-action="create" class="btn btn-primary">New Product</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-bordered" id="tblProduct">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Product Name</th>
+                            <th>Product Unit</th>
+                            <th>Product Description</th>
+                            <th>Product Price</th>
+                            <th>Product Qty</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        tableData = [];
+        $(document).ready(function ()
+        {
+            LoadProducts()
+        });
+
+        function LoadProducts()
+        {
+            $.ajax({
+                type: 'Get',
+                url: 'https://localhost:7043/api/Product',
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                async: false,
+                success: function (data)
+                {
+                    var _edit = "<a class='btn btn-primary'>Edit</a>"
+                    var _delete = "<a class='btn btn-danger'>Delete</a>"
+                    var _actions = _edit + " " + _delete;
+                    $.each(data, function (key, value)
+                    {
+                        tableData.push([value.id,
+                        value.name,
+                        value.unit,
+                        value.description,
+                        value.price,
+                        value.qty,
+                            _actions])
+                    })
+                },
+                failure: function (error)
+                {
+
+                }
+            })
+            $("#tblProduct").DataTable({
+                data: tableData
+            })
+        }
+    </script>
+}
+
+
+
+
+

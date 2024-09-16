@@ -1,0 +1,946 @@
+2024-09-16 13:44:45.115 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 13:44:45.152 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 13:44:45.198 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 13:44:45.200 +05:30 [INF] Hosting environment: Development
+2024-09-16 13:44:45.201 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 13:44:45.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 13:44:45.598 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 263.7319ms
+2024-09-16 13:44:45.639 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 13:44:45.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 6.168ms
+2024-09-16 13:44:45.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 13:44:45.693 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.297ms
+2024-09-16 13:44:45.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 13:44:45.910 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.5141ms
+2024-09-16 13:44:50.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 13:44:50.295 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 12.1092ms
+2024-09-16 13:44:50.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 13:44:50.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 13:44:50.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.8995ms
+2024-09-16 13:44:50.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.3117ms
+2024-09-16 13:44:50.374 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 13:44:50.403 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.8339ms
+2024-09-16 13:49:29.080 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 13:49:29.118 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 13:49:29.163 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 13:49:29.165 +05:30 [INF] Hosting environment: Development
+2024-09-16 13:49:29.166 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 13:49:29.402 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 13:49:29.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 136.6459ms
+2024-09-16 13:49:29.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 13:49:29.556 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 7.0593ms
+2024-09-16 13:49:29.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 13:49:29.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.5169ms
+2024-09-16 13:49:29.647 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 13:49:29.750 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.4105ms
+2024-09-16 13:49:34.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product/units - null null
+2024-09-16 13:49:34.325 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetUnits (CrudWebApi)'
+2024-09-16 13:49:34.342 +05:30 [INF] Route matched with {action = "GetUnits", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] GetUnits() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 13:49:34.454 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-16 13:49:34.461 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetUnits (CrudWebApi) in 112.0465ms
+2024-09-16 13:49:34.462 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetUnits (CrudWebApi)'
+2024-09-16 13:49:34.465 +05:30 [INF] HTTP GET /api/Product/units responded 200 in 142.7431 ms
+2024-09-16 13:49:34.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product/units - 200 null application/json; charset=utf-8 161.2032ms
+2024-09-16 16:21:22.602 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 16:21:22.644 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 16:21:22.698 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 16:21:22.699 +05:30 [INF] Hosting environment: Development
+2024-09-16 16:21:22.700 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 16:21:26.761 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:21:27.413 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 657.2523ms
+2024-09-16 16:21:27.552 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:21:27.556 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:21:27.656 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 103.3565ms
+2024-09-16 16:21:27.785 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 232.5562ms
+2024-09-16 16:21:27.929 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:21:28.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 298.0866ms
+2024-09-16 16:22:22.264 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:22:22.332 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 70.0591ms
+2024-09-16 16:22:22.342 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:22:22.347 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.129ms
+2024-09-16 16:22:22.363 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:22:22.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.1258ms
+2024-09-16 16:22:22.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:22:22.500 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.4472ms
+2024-09-16 16:25:58.415 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 16:25:58.450 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 16:25:58.494 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 16:25:58.496 +05:30 [INF] Hosting environment: Development
+2024-09-16 16:25:58.497 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 16:25:58.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:25:59.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 189.5483ms
+2024-09-16 16:25:59.038 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:25:59.050 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 11.8155ms
+2024-09-16 16:25:59.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:25:59.089 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.7644ms
+2024-09-16 16:25:59.148 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:25:59.257 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.8401ms
+2024-09-16 16:26:04.679 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:26:04.693 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:04.695 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:04.698 +05:30 [INF] HTTP OPTIONS /api/Product responded 405 in 7.4462 ms
+2024-09-16 16:26:04.701 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 405 0 null 21.2617ms
+2024-09-16 16:26:13.595 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:26:13.604 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:13.606 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:13.607 +05:30 [INF] HTTP OPTIONS /api/Product responded 405 in 3.6105 ms
+2024-09-16 16:26:13.613 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 405 0 null 17.4001ms
+2024-09-16 16:26:14.508 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:26:14.547 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:14.549 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:14.550 +05:30 [INF] HTTP OPTIONS /api/Product responded 405 in 2.6298 ms
+2024-09-16 16:26:14.552 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 405 0 null 44.5491ms
+2024-09-16 16:26:17.108 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:26:17.183 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:17.185 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-09-16 16:26:17.187 +05:30 [INF] HTTP OPTIONS /api/Product responded 405 in 3.5421 ms
+2024-09-16 16:26:17.207 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 405 0 null 98.998ms
+2024-09-16 16:34:28.281 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 16:34:28.335 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 16:34:28.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:34:28.387 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 16:34:28.388 +05:30 [INF] Hosting environment: Development
+2024-09-16 16:34:28.390 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 16:34:28.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 167.9333ms
+2024-09-16 16:34:28.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:34:28.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:34:28.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 7.5139ms
+2024-09-16 16:34:28.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.9811ms
+2024-09-16 16:34:28.685 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:34:28.788 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.4138ms
+2024-09-16 16:34:32.044 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:34:32.070 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 26.2536ms
+2024-09-16 16:34:32.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:34:32.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:34:32.097 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 7.7435ms
+2024-09-16 16:34:32.106 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.893ms
+2024-09-16 16:34:32.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:34:32.188 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.4201ms
+2024-09-16 16:34:33.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:34:33.580 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 16.7556ms
+2024-09-16 16:34:33.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:34:33.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:34:33.620 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 9.3642ms
+2024-09-16 16:34:33.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.6298ms
+2024-09-16 16:34:33.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:34:33.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.9065ms
+2024-09-16 16:34:33.746 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:34:33.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 5.8339ms
+2024-09-16 16:34:33.769 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:34:33.769 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:34:33.776 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 6.9058ms
+2024-09-16 16:34:33.784 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.8763ms
+2024-09-16 16:34:33.821 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:34:33.839 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.6264ms
+2024-09-16 16:34:33.889 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:34:33.894 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 5.2483ms
+2024-09-16 16:34:33.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:34:33.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:34:33.913 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.4402ms
+2024-09-16 16:34:33.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.3752ms
+2024-09-16 16:34:33.960 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:34:33.981 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.2873ms
+2024-09-16 16:34:34.049 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 16:34:34.055 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 5.4361ms
+2024-09-16 16:34:34.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 16:34:34.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 16:34:34.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 7.0917ms
+2024-09-16 16:34:34.084 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.8007ms
+2024-09-16 16:34:34.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 16:34:34.165 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.0352ms
+2024-09-16 16:34:36.881 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:34:36.886 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:34:36.888 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 7.0825ms
+2024-09-16 16:34:36.891 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:34:36.897 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:34:36.903 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:34:36.921 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:34:37.458 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 16:34:37.462 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 16:34:38.041 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:34:38.130 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:34:38.149 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 1222.2416ms
+2024-09-16 16:34:38.152 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:34:38.155 +05:30 [INF] HTTP GET /api/Product responded 200 in 1253.7896 ms
+2024-09-16 16:34:38.163 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 1272.7022ms
+2024-09-16 16:50:19.620 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:50:19.624 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:50:19.626 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.4954ms
+2024-09-16 16:50:19.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:50:19.638 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:50:19.642 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:50:19.645 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:50:19.673 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:50:19.677 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:50:19.679 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 30.2238ms
+2024-09-16 16:50:19.680 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:50:19.681 +05:30 [INF] HTTP GET /api/Product responded 200 in 39.1977 ms
+2024-09-16 16:50:19.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 55.449ms
+2024-09-16 16:51:10.534 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:51:10.540 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:51:10.541 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 7.5064ms
+2024-09-16 16:51:10.543 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:51:10.549 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:51:10.550 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:51:10.552 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:51:10.625 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:51:10.628 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:51:10.630 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 74.9218ms
+2024-09-16 16:51:10.631 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:51:10.632 +05:30 [INF] HTTP GET /api/Product responded 200 in 82.0483 ms
+2024-09-16 16:51:10.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 90.6629ms
+2024-09-16 16:51:30.111 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:51:30.114 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:51:30.115 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.4083ms
+2024-09-16 16:51:30.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:51:30.122 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:51:30.123 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:51:30.124 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:51:30.129 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:51:30.133 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:51:30.136 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 8.2163ms
+2024-09-16 16:51:30.137 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:51:30.138 +05:30 [INF] HTTP GET /api/Product responded 200 in 15.2276 ms
+2024-09-16 16:51:30.140 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 23.1445ms
+2024-09-16 16:54:37.792 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:54:37.877 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:54:37.881 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 88.5881ms
+2024-09-16 16:54:37.886 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:54:37.957 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:54:37.958 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:54:37.959 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:54:37.971 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:54:37.994 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:54:38.011 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 49.3264ms
+2024-09-16 16:54:38.021 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:54:38.023 +05:30 [INF] HTTP GET /api/Product responded 200 in 64.7601 ms
+2024-09-16 16:54:38.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 139.5694ms
+2024-09-16 16:56:02.115 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:56:02.133 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:56:02.135 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 19.1927ms
+2024-09-16 16:56:02.137 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:56:02.143 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:56:02.145 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:02.146 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:56:02.153 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:56:02.157 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:56:02.161 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 11.6632ms
+2024-09-16 16:56:02.165 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:02.167 +05:30 [INF] HTTP GET /api/Product responded 200 in 22.4091 ms
+2024-09-16 16:56:02.170 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 33.5959ms
+2024-09-16 16:56:26.642 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:56:26.647 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:56:26.648 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 6.1714ms
+2024-09-16 16:56:26.650 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:56:26.657 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:56:26.658 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:26.660 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:56:26.665 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:56:26.670 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:56:26.672 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 9.4659ms
+2024-09-16 16:56:26.675 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:26.676 +05:30 [INF] HTTP GET /api/Product responded 200 in 17.6567 ms
+2024-09-16 16:56:26.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 28.6465ms
+2024-09-16 16:56:31.228 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:56:31.234 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:56:31.236 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:31.239 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:56:31.244 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:56:31.246 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:56:31.248 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 5.2468ms
+2024-09-16 16:56:31.250 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:31.251 +05:30 [INF] HTTP GET /api/Product responded 200 in 14.6998 ms
+2024-09-16 16:56:31.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 24.5249ms
+2024-09-16 16:56:36.363 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:56:36.366 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:56:36.367 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.3816ms
+2024-09-16 16:56:36.369 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:56:36.374 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:56:36.375 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:36.376 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:56:36.381 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:56:36.384 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:56:36.386 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 6.8136ms
+2024-09-16 16:56:36.387 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:56:36.388 +05:30 [INF] HTTP GET /api/Product responded 200 in 13.5323 ms
+2024-09-16 16:56:36.390 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 21.2086ms
+2024-09-16 16:57:28.827 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:57:28.833 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:57:28.834 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 7.2914ms
+2024-09-16 16:57:28.836 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:57:28.842 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:57:28.843 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:57:28.844 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:57:28.849 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:57:28.852 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:57:28.855 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 7.5599ms
+2024-09-16 16:57:28.856 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:57:28.858 +05:30 [INF] HTTP GET /api/Product responded 200 in 15.2921 ms
+2024-09-16 16:57:28.860 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 23.8986ms
+2024-09-16 16:58:31.766 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 16:58:31.770 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:58:31.773 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 7.1408ms
+2024-09-16 16:58:31.776 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 16:58:31.781 +05:30 [INF] CORS policy execution successful.
+2024-09-16 16:58:31.782 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:58:31.783 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 16:58:31.789 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 16:58:31.792 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 16:58:31.794 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 8.3579ms
+2024-09-16 16:58:31.795 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 16:58:31.796 +05:30 [INF] HTTP GET /api/Product responded 200 in 14.6807 ms
+2024-09-16 16:58:31.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 22.5205ms
+2024-09-16 17:00:58.303 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:00:58.305 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:00:58.306 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 3.7165ms
+2024-09-16 17:00:58.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:00:58.312 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:00:58.312 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:00:58.314 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:00:58.317 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:00:58.320 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:00:58.321 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 5.6718ms
+2024-09-16 17:00:58.323 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:00:58.325 +05:30 [INF] HTTP GET /api/Product responded 200 in 12.4208 ms
+2024-09-16 17:00:58.327 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 18.9ms
+2024-09-16 17:01:05.409 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:01:05.413 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:01:05.414 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.682ms
+2024-09-16 17:01:05.416 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:01:05.421 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:01:05.422 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:01:05.424 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:01:05.428 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:01:05.431 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:01:05.433 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 7.0529ms
+2024-09-16 17:01:05.435 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:01:05.436 +05:30 [INF] HTTP GET /api/Product responded 200 in 14.7114 ms
+2024-09-16 17:01:05.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 22.9909ms
+2024-09-16 17:02:10.393 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:02:10.397 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:02:10.399 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.8206ms
+2024-09-16 17:02:10.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:02:10.405 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:02:10.406 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:02:10.407 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:02:10.412 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:02:10.414 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:02:10.416 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 6.1389ms
+2024-09-16 17:02:10.418 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:02:10.420 +05:30 [INF] HTTP GET /api/Product responded 200 in 13.4302 ms
+2024-09-16 17:02:10.422 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 21.0062ms
+2024-09-16 17:02:44.790 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:02:44.796 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:02:44.798 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 8.0688ms
+2024-09-16 17:02:44.800 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:02:44.808 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:02:44.809 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:02:44.812 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:02:44.819 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:02:44.823 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:02:44.826 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 7.9158ms
+2024-09-16 17:02:44.827 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:02:44.829 +05:30 [INF] HTTP GET /api/Product responded 200 in 20.4285 ms
+2024-09-16 17:02:44.832 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 32.6681ms
+2024-09-16 17:03:18.531 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:03:18.535 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:03:18.536 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.8574ms
+2024-09-16 17:03:18.538 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:03:18.542 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:03:18.544 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:03:18.546 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:03:18.551 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:03:18.554 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:03:18.557 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 8.6226ms
+2024-09-16 17:03:18.559 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:03:18.561 +05:30 [INF] HTTP GET /api/Product responded 200 in 16.7005 ms
+2024-09-16 17:03:18.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 24.7379ms
+2024-09-16 17:03:21.501 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:03:21.507 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:03:21.509 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:03:21.510 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:03:21.514 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:03:21.518 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:03:21.522 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 8.7377ms
+2024-09-16 17:03:21.524 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:03:21.526 +05:30 [INF] HTTP GET /api/Product responded 200 in 16.8565 ms
+2024-09-16 17:03:21.528 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 26.804ms
+2024-09-16 17:04:39.789 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:04:39.793 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:04:39.794 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.2448ms
+2024-09-16 17:04:39.795 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:04:39.800 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:04:39.801 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:04:39.802 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:04:39.807 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:04:39.810 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:04:39.811 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 5.8011ms
+2024-09-16 17:04:39.813 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:04:39.814 +05:30 [INF] HTTP GET /api/Product responded 200 in 13.3269 ms
+2024-09-16 17:04:39.816 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 20.8555ms
+2024-09-16 17:07:32.712 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:07:32.720 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:07:32.721 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 9.2238ms
+2024-09-16 17:07:32.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:07:32.729 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:07:32.732 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:07:32.736 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:07:32.746 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:07:32.749 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:07:32.756 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 13.2854ms
+2024-09-16 17:07:32.759 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:07:32.761 +05:30 [INF] HTTP GET /api/Product responded 200 in 28.4587 ms
+2024-09-16 17:07:32.764 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 38.8807ms
+2024-09-16 17:07:46.927 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:07:46.930 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:07:46.932 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.3502ms
+2024-09-16 17:25:30.203 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:25:30.206 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:25:30.208 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.5667ms
+2024-09-16 17:25:30.211 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:25:30.215 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:25:30.217 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:25:30.218 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:25:30.229 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:25:30.233 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:25:30.234 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 13.2345ms
+2024-09-16 17:25:30.236 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:25:30.237 +05:30 [INF] HTTP GET /api/Product responded 200 in 20.3820 ms
+2024-09-16 17:25:30.240 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 28.5714ms
+2024-09-16 17:26:19.041 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 17:26:19.044 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:26:19.045 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 3.467ms
+2024-09-16 17:26:19.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 17:26:19.051 +05:30 [INF] CORS policy execution successful.
+2024-09-16 17:26:19.052 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:26:19.053 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 17:26:19.057 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 17:26:19.060 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 17:26:19.061 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 5.8158ms
+2024-09-16 17:26:19.062 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 17:26:19.065 +05:30 [INF] HTTP GET /api/Product responded 200 in 12.3792 ms
+2024-09-16 17:26:19.067 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 20.1943ms
+2024-09-16 18:07:04.480 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json 117
+2024-09-16 18:07:04.484 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:07:04.485 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:07:04.498 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:07:04.685 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name], [Price], [Qty], [Unit])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-16 18:07:04.710 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CrudWebApi.Models.Product'.
+2024-09-16 18:07:04.725 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 221.7084ms
+2024-09-16 18:07:04.728 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:07:04.730 +05:30 [INF] HTTP POST /api/Product responded 201 in 244.9566 ms
+2024-09-16 18:07:04.732 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 201 null application/json; charset=utf-8 252.6265ms
+2024-09-16 18:07:28.575 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7043/api/Product/3 - null null
+2024-09-16 18:07:28.579 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:07:28.580 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.DeleteProduct (CrudWebApi)'
+2024-09-16 18:07:28.587 +05:30 [INF] Route matched with {action = "DeleteProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteProduct(Int32) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:07:28.691 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2024-09-16 18:07:28.705 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Products]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-09-16 18:07:28.712 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-16 18:07:28.714 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.DeleteProduct (CrudWebApi) in 122.9257ms
+2024-09-16 18:07:28.716 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.DeleteProduct (CrudWebApi)'
+2024-09-16 18:07:28.717 +05:30 [INF] HTTP DELETE /api/Product/3 responded 200 in 137.0570 ms
+2024-09-16 18:07:28.720 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7043/api/Product/3 - 200 null text/plain; charset=utf-8 144.8632ms
+2024-09-16 18:13:58.921 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:13:58.925 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:13:58.926 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.0193ms
+2024-09-16 18:13:58.927 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:13:58.932 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:13:58.933 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:13:58.935 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:13:58.941 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:13:58.977 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 37.3698ms
+2024-09-16 18:13:58.980 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:13:58.981 +05:30 [INF] HTTP POST /api/Product responded 400 in 47.4215 ms
+2024-09-16 18:13:58.983 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 56.0513ms
+2024-09-16 18:14:06.769 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:14:06.773 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:14:06.774 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.9678ms
+2024-09-16 18:14:06.776 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:14:06.783 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:14:06.785 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:14:06.786 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:14:06.790 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:14:06.793 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.4736ms
+2024-09-16 18:14:06.796 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:14:06.798 +05:30 [INF] HTTP POST /api/Product responded 400 in 12.6905 ms
+2024-09-16 18:14:06.800 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 24.3007ms
+2024-09-16 18:14:29.232 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:14:29.236 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:14:29.237 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.3737ms
+2024-09-16 18:14:29.240 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:14:29.250 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:14:29.251 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:14:29.254 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:14:29.257 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:14:29.260 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.819ms
+2024-09-16 18:14:29.261 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:14:29.264 +05:30 [INF] HTTP POST /api/Product responded 400 in 12.0662 ms
+2024-09-16 18:14:29.267 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 27.0106ms
+2024-09-16 18:15:28.905 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:15:28.924 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:15:28.931 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 25.1417ms
+2024-09-16 18:15:28.933 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:15:28.938 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:15:28.938 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:15:28.939 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:15:28.943 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:15:28.945 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.3796ms
+2024-09-16 18:15:28.946 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:15:28.947 +05:30 [INF] HTTP POST /api/Product responded 400 in 9.1563 ms
+2024-09-16 18:15:28.949 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 16.6982ms
+2024-09-16 18:16:02.912 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:16:02.921 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:16:02.922 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 9.8088ms
+2024-09-16 18:16:02.925 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:16:02.932 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:16:02.933 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:16:02.936 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:16:02.939 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:16:02.942 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.7419ms
+2024-09-16 18:16:02.944 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:16:02.946 +05:30 [INF] HTTP POST /api/Product responded 400 in 13.1012 ms
+2024-09-16 18:16:02.949 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 24.0952ms
+2024-09-16 18:18:14.956 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:18:14.959 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:18:14.960 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.788ms
+2024-09-16 18:18:14.962 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:18:14.968 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:18:14.970 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:18:14.971 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:18:14.974 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:18:14.976 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.6001ms
+2024-09-16 18:18:14.978 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:18:14.980 +05:30 [INF] HTTP POST /api/Product responded 400 in 9.9065 ms
+2024-09-16 18:18:14.982 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 19.4693ms
+2024-09-16 18:20:36.693 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:20:36.697 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:20:36.698 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.5014ms
+2024-09-16 18:20:36.701 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:20:36.709 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:20:36.710 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:20:36.711 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:20:36.714 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:20:36.717 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.1854ms
+2024-09-16 18:20:36.718 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:20:36.719 +05:30 [INF] HTTP POST /api/Product responded 400 in 9.4420 ms
+2024-09-16 18:20:36.721 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 20.1378ms
+2024-09-16 18:21:45.445 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:21:45.453 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:21:45.456 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 10.6664ms
+2024-09-16 18:21:45.458 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:21:45.463 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:21:45.464 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:21:45.466 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:21:45.469 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:21:45.472 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.2702ms
+2024-09-16 18:21:45.473 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:21:45.478 +05:30 [INF] HTTP POST /api/Product responded 400 in 13.5729 ms
+2024-09-16 18:21:45.493 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 34.8153ms
+2024-09-16 18:23:36.850 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:23:36.854 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:23:36.855 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 4.7557ms
+2024-09-16 18:23:36.857 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:23:36.876 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:23:36.877 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:23:36.879 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:23:36.882 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:23:36.884 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.6388ms
+2024-09-16 18:23:36.886 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:23:36.887 +05:30 [INF] HTTP POST /api/Product responded 400 in 9.6411 ms
+2024-09-16 18:23:36.890 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 32.9422ms
+2024-09-16 18:24:00.138 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:24:00.143 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:24:00.144 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 6.4838ms
+2024-09-16 18:24:00.146 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:24:00.153 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:24:00.154 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:24:00.156 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:24:00.159 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:24:00.161 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.1352ms
+2024-09-16 18:24:00.162 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:24:00.163 +05:30 [INF] HTTP POST /api/Product responded 400 in 8.8569 ms
+2024-09-16 18:24:00.166 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 20.03ms
+2024-09-16 18:24:40.033 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - null null
+2024-09-16 18:24:40.039 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:24:40.040 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:24:40.051 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:24:40.056 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:24:40.059 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 15.0818ms
+2024-09-16 18:24:40.061 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:24:40.062 +05:30 [INF] HTTP GET /api/Product responded 200 in 23.3085 ms
+2024-09-16 18:24:40.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 32.1912ms
+2024-09-16 18:25:07.747 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:25:07.751 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:25:07.753 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.6291ms
+2024-09-16 18:25:07.755 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:25:07.769 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:25:07.771 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:25:07.772 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:25:07.777 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:25:07.780 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.8459ms
+2024-09-16 18:25:07.781 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:25:07.783 +05:30 [INF] HTTP POST /api/Product responded 400 in 12.1777 ms
+2024-09-16 18:25:07.785 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 29.7124ms
+2024-09-16 18:25:29.614 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 18:25:29.658 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 18:25:29.722 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 18:25:29.724 +05:30 [INF] Hosting environment: Development
+2024-09-16 18:25:29.725 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 18:25:30.027 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 18:25:30.374 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 351.8708ms
+2024-09-16 18:25:30.379 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 18:25:30.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 18:25:30.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 45.8554ms
+2024-09-16 18:25:30.697 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 293.7321ms
+2024-09-16 18:25:30.735 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 18:25:30.890 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.1826ms
+2024-09-16 18:25:59.794 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:25:59.803 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:25:59.806 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 11.8114ms
+2024-09-16 18:25:59.818 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:25:59.825 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:25:59.832 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:25:59.854 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:26:00.242 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:26:00.694 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 18:26:00.697 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 18:26:01.430 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:26:01.574 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1324.7851ms.
+2024-09-16 18:26:01.586 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:26:01.633 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 1773.359ms
+2024-09-16 18:26:01.638 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:26:01.642 +05:30 [INF] HTTP GET /api/Product responded 200 in 1811.6426 ms
+2024-09-16 18:26:01.655 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 1836.5909ms
+2024-09-16 18:26:16.808 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:26:16.812 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:16.813 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.5817ms
+2024-09-16 18:26:16.827 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:26:16.832 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:16.833 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:16.842 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:26:16.873 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:26:16.887 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 40.291ms
+2024-09-16 18:26:16.890 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:16.891 +05:30 [INF] HTTP POST /api/Product responded 400 in 58.3249 ms
+2024-09-16 18:26:16.893 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 68.0972ms
+2024-09-16 18:26:34.595 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:26:34.601 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:34.603 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 9.2961ms
+2024-09-16 18:26:34.608 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:26:34.616 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:34.617 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:34.618 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:26:34.625 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:26:34.627 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 5.1333ms
+2024-09-16 18:26:34.630 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:34.631 +05:30 [INF] HTTP POST /api/Product responded 400 in 14.3805 ms
+2024-09-16 18:26:34.633 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 24.7456ms
+2024-09-16 18:26:40.248 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:26:40.252 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:40.253 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.3326ms
+2024-09-16 18:26:40.255 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:26:40.261 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:40.262 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:40.264 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:26:40.268 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:26:40.270 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.0593ms
+2024-09-16 18:26:40.272 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:40.274 +05:30 [INF] HTTP POST /api/Product responded 400 in 11.7781 ms
+2024-09-16 18:26:40.276 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 20.8546ms
+2024-09-16 18:26:40.432 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:26:40.439 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:40.442 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:40.445 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:26:40.449 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:26:40.450 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.0788ms
+2024-09-16 18:26:40.452 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:40.456 +05:30 [INF] HTTP POST /api/Product responded 400 in 13.6202 ms
+2024-09-16 18:26:40.460 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 27.8509ms
+2024-09-16 18:26:40.648 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:26:40.661 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:26:40.662 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:40.664 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:26:40.668 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:26:40.671 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.6484ms
+2024-09-16 18:26:40.673 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:26:40.674 +05:30 [INF] HTTP POST /api/Product responded 400 in 11.8949 ms
+2024-09-16 18:26:40.676 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 28.1048ms
+2024-09-16 18:28:01.449 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7043/api/Product/ - application/json 111
+2024-09-16 18:28:01.451 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:28:01.452 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:28:01.466 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:28:01.469 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 13.0728ms
+2024-09-16 18:28:01.471 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:28:01.472 +05:30 [INF] HTTP POST /api/Product/ responded 400 in 21.0472 ms
+2024-09-16 18:28:01.474 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7043/api/Product/ - 400 null application/problem+json; charset=utf-8 26.0889ms
+2024-09-16 18:28:25.055 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7043/api/Product/ - application/json 114
+2024-09-16 18:28:25.058 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:28:25.060 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:28:25.110 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:28:31.286 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name], [Price], [Qty], [Unit])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-16 18:28:37.937 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 12824.0229ms.
+2024-09-16 18:28:37.944 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CrudWebApi.Models.Product'.
+2024-09-16 18:28:37.963 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 12899.2311ms
+2024-09-16 18:28:37.966 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:28:37.969 +05:30 [INF] HTTP POST /api/Product/ responded 201 in 12910.9142 ms
+2024-09-16 18:28:37.973 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7043/api/Product/ - 201 null application/json; charset=utf-8 12917.9424ms
+2024-09-16 18:29:26.165 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:29:26.178 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:29:26.180 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 14.5955ms
+2024-09-16 18:29:26.183 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:29:26.188 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:29:26.193 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:29:26.196 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:29:26.223 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:29:26.286 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:29:26.289 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 65.2414ms.
+2024-09-16 18:29:26.291 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:29:26.293 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 92.8337ms
+2024-09-16 18:29:26.294 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:29:26.296 +05:30 [INF] HTTP GET /api/Product responded 200 in 102.2190 ms
+2024-09-16 18:29:26.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 115.5406ms
+2024-09-16 18:30:59.425 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:30:59.448 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:30:59.449 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 24.196ms
+2024-09-16 18:30:59.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:30:59.473 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:30:59.475 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:30:59.481 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:30:59.506 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:30:59.512 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:30:59.522 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.2622ms.
+2024-09-16 18:30:59.528 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:30:59.530 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 45.4819ms
+2024-09-16 18:30:59.532 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:30:59.533 +05:30 [INF] HTTP GET /api/Product responded 200 in 58.8634 ms
+2024-09-16 18:30:59.536 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 74.8462ms
+2024-09-16 18:31:33.388 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json 92
+2024-09-16 18:31:33.406 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:31:33.407 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:31:33.409 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:31:33.455 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:31:36.975 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name], [Price], [Qty], [Unit])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-16 18:31:39.098 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 5640.6436ms.
+2024-09-16 18:31:39.104 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CrudWebApi.Models.Product'.
+2024-09-16 18:31:39.107 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 5684.5815ms
+2024-09-16 18:31:39.109 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:31:39.111 +05:30 [INF] HTTP POST /api/Product responded 201 in 5703.4620 ms
+2024-09-16 18:31:39.114 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 201 null application/json; charset=utf-8 5726.1217ms
+2024-09-16 18:34:07.147 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:34:07.242 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:34:07.245 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 97.9315ms
+2024-09-16 18:34:07.248 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:34:07.273 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:34:07.274 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:34:07.276 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:34:07.301 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:34:07.331 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:34:07.344 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.2944ms.
+2024-09-16 18:34:07.346 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:34:07.349 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 69.6048ms
+2024-09-16 18:34:07.361 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:34:07.362 +05:30 [INF] HTTP GET /api/Product responded 200 in 87.7562 ms
+2024-09-16 18:34:07.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 115.7222ms
+2024-09-16 18:35:02.023 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:35:02.026 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:35:02.027 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 3.9937ms
+2024-09-16 18:35:02.029 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:35:02.060 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:35:02.061 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:35:02.063 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:35:02.066 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:35:02.069 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.6623ms
+2024-09-16 18:35:02.102 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:35:02.104 +05:30 [INF] HTTP POST /api/Product responded 400 in 42.3828 ms
+2024-09-16 18:35:02.106 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 76.636ms
+2024-09-16 18:36:22.033 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:36:22.066 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:36:22.067 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 34.2454ms
+2024-09-16 18:36:22.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:36:22.086 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:36:22.089 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:36:22.091 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:36:22.116 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:36:22.121 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:36:22.127 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.8416ms.
+2024-09-16 18:36:22.129 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:36:22.130 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 36.4353ms
+2024-09-16 18:36:22.132 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:36:22.133 +05:30 [INF] HTTP GET /api/Product responded 200 in 43.7158 ms
+2024-09-16 18:36:22.135 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 63.1254ms
+2024-09-16 18:36:28.781 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:36:28.810 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:36:28.812 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 31.0932ms
+2024-09-16 18:36:28.814 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:36:28.825 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:36:28.826 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:36:28.827 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:36:28.867 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:36:28.870 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:36:28.874 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.633ms.
+2024-09-16 18:36:28.876 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:36:28.878 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 48.1558ms
+2024-09-16 18:36:28.880 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:36:28.881 +05:30 [INF] HTTP GET /api/Product responded 200 in 54.7149 ms
+2024-09-16 18:36:28.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 68.5117ms
+2024-09-16 18:36:49.880 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:36:49.885 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:36:49.886 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 6.8307ms
+2024-09-16 18:36:49.888 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:36:49.892 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:36:49.894 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:36:49.896 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:36:49.899 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:36:49.901 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.049ms
+2024-09-16 18:36:49.903 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:36:49.904 +05:30 [INF] HTTP POST /api/Product responded 400 in 10.8227 ms
+2024-09-16 18:36:49.906 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 18.5264ms
+2024-09-16 18:37:16.520 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:37:16.526 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:37:16.528 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 7.9025ms
+2024-09-16 18:37:16.547 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:37:16.556 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:37:16.559 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:37:16.563 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:37:16.566 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:37:16.569 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.1776ms
+2024-09-16 18:37:16.571 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:37:16.573 +05:30 [INF] HTTP POST /api/Product responded 400 in 13.4535 ms
+2024-09-16 18:37:16.575 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 34.3301ms
+2024-09-16 18:37:26.073 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:37:26.076 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:37:26.078 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.595ms
+2024-09-16 18:37:26.081 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:37:26.103 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:37:26.105 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:37:26.108 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:37:26.114 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:37:26.117 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.6253ms
+2024-09-16 18:37:26.120 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:37:26.121 +05:30 [INF] HTTP POST /api/Product responded 400 in 16.7121 ms
+2024-09-16 18:37:26.123 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 42.4378ms
+2024-09-16 18:41:39.075 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:41:39.084 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:41:39.085 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 9.9217ms
+2024-09-16 18:41:39.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:41:39.116 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:41:39.117 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:41:39.121 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:41:39.157 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:41:39.162 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:41:39.166 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.3806ms.
+2024-09-16 18:41:39.169 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:41:39.171 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 47.7922ms
+2024-09-16 18:41:39.174 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:41:39.176 +05:30 [INF] HTTP GET /api/Product responded 200 in 59.1960 ms
+2024-09-16 18:41:39.181 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 71.4842ms
+2024-09-16 18:42:21.627 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:42:21.631 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:42:21.632 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.3943ms
+2024-09-16 18:42:21.634 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:42:21.640 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:42:21.641 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:42:21.642 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:42:21.666 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:42:21.670 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:42:21.673 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.4397ms.
+2024-09-16 18:42:21.675 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 18:42:21.677 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 31.6875ms
+2024-09-16 18:42:21.679 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:42:21.680 +05:30 [INF] HTTP GET /api/Product responded 200 in 38.8108 ms
+2024-09-16 18:42:21.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 47.8361ms
+2024-09-16 18:42:59.692 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:42:59.711 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:42:59.712 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 20.0284ms
+2024-09-16 18:42:59.715 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:42:59.729 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:42:59.731 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:42:59.732 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:42:59.738 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:42:59.741 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 3.0376ms
+2024-09-16 18:42:59.777 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:42:59.779 +05:30 [INF] HTTP POST /api/Product responded 400 in 47.8956 ms
+2024-09-16 18:42:59.781 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 66.0744ms

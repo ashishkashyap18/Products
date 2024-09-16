@@ -1,0 +1,111 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Create Product";
+}
+<div class="card container">
+    <div class="card-header">
+        <h2>Create Product :</h2>
+    </div>
+    <div class="card-body">
+        <div class="row gap-3">
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" asp-for="Name">Product Name : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="Name" id="txtName" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" asp-for="Unit">Product Unit : </label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="txtUnit" asp-for="Unit">
+                            @foreach (var unit in Enum.GetValues(typeof(Unit)))
+                            {
+                                <option value="@((int)unit)">@unit</option>
+                            }
+                        </select>
+                        <span asp-validation-for="Unit" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" asp-for="Price">Product Price : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="Price" id="txtPrice" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" asp-for="Qty">Product Quantity : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="Qty" id="txtQty" />
+                        <span asp-validation-for="Qty" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" asp-for="Description">Product Description : </label>
+                    <div class="col-sm-10">
+                        <input class="form-control" asp-for="Description" id="txtDescription" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-danger" asp-validation-summary="All"></div>
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-primary" onclick="SaveProduct()">Save</a>
+        <a class="btn btn-danger">Reset</a>
+        <a asp-controller="Product" asp-action="index" class="btn btn-warning">Back</a>
+    </div>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        function SaveProduct()
+        {
+            // var _name = $("#txtName");
+            // var _unit = $("#txtUnit");
+            // var _price = $("#txtPrice");
+            // var _qty = $("#txtQty");
+            // var _description = $("#txtDescription");
+
+            var name = $("#txtName").val();
+            var unit = $("#txtUnit").val();
+            var price = $("#txtPrice").val();
+            var qty = $("#txtQty").val();
+            var description = $("#txtDescription").val();
+
+            var _obj = new Object();
+            _obj.name = name;
+            _obj.description = description;
+            _obj.price = parseFloat(price);
+            _obj.qty = parseFloat(qty);
+            _obj.unit = parseInt(unit);
+
+            console.log(JSON.stringify(_obj));
+
+            $.ajax({
+                type: 'POST',
+                url: 'https://localhost:7043/api/Product',
+                dataType: JSON.stringify(_obj),
+                contentType: "application/json",
+                success: function (data)
+                {
+                    debugger;
+                },
+                failure: function (error)
+                {
+
+                }
+            });
+        }
+    </script>
+}
