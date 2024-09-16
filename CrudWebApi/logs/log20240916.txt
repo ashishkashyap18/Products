@@ -944,3 +944,916 @@ FROM [Products] AS [p]
 2024-09-16 18:42:59.777 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
 2024-09-16 18:42:59.779 +05:30 [INF] HTTP POST /api/Product responded 400 in 47.8956 ms
 2024-09-16 18:42:59.781 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 66.0744ms
+2024-09-16 18:55:00.374 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 18:55:00.442 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 18:55:00.524 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 18:55:00.574 +05:30 [INF] Hosting environment: Development
+2024-09-16 18:55:00.575 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 18:55:03.461 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 18:55:04.232 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 18:55:04.233 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 18:55:04.237 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 780.4709ms
+2024-09-16 18:55:04.324 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 91.6859ms
+2024-09-16 18:55:04.442 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 209.0967ms
+2024-09-16 18:55:04.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 18:55:05.060 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 567.3247ms
+2024-09-16 18:55:19.111 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:55:19.125 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:55:19.128 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 17.6646ms
+2024-09-16 18:55:19.134 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:55:19.144 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:55:19.152 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:55:19.182 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:55:19.496 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:55:19.918 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 18:55:19.922 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 18:55:20.691 +05:30 [ERR] Failed executing DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:55:20.734 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CrudWebApi.AppDbContext.AppDbContent'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 18:55:20.910 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 1721.2501ms
+2024-09-16 18:55:20.914 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:55:20.918 +05:30 [ERR] HTTP GET /api/Product responded 500 in 1769.9310 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 18:55:21.097 +05:30 [ERR] An error occured
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at CrudWebApi.Middlewares.ErrorMiddleWare.InvokeAsync(HttpContext context) in D:\Ashish\JQuery\CrudWebApi\Middlewares\ErrorMiddleware.cs:line 20
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 18:55:21.146 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 500 null application/json; charset=utf-8 2012.2308ms
+2024-09-16 18:55:41.298 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:55:41.304 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:55:41.305 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 7.3032ms
+2024-09-16 18:55:41.318 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json 0
+2024-09-16 18:55:41.324 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:55:41.325 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:55:41.337 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:55:41.370 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:55:41.387 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 47.4637ms
+2024-09-16 18:55:41.390 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:55:41.391 +05:30 [INF] HTTP POST /api/Product responded 400 in 65.8185 ms
+2024-09-16 18:55:41.394 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 77.8497ms
+2024-09-16 18:59:07.429 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:59:07.447 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:59:07.450 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 21.2046ms
+2024-09-16 18:59:07.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 18:59:07.468 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:59:07.469 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:59:07.473 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:59:07.501 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 18:59:07.547 +05:30 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 18:59:07.552 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CrudWebApi.AppDbContext.AppDbContent'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 18:59:07.669 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 192.5999ms
+2024-09-16 18:59:07.673 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 18:59:07.674 +05:30 [ERR] HTTP GET /api/Product responded 500 in 205.4013 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 18:59:07.808 +05:30 [ERR] An error occured
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at CrudWebApi.Middlewares.ErrorMiddleWare.InvokeAsync(HttpContext context) in D:\Ashish\JQuery\CrudWebApi\Middlewares\ErrorMiddleware.cs:line 20
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 18:59:07.846 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 500 null application/json; charset=utf-8 384.1521ms
+2024-09-16 18:59:22.304 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 18:59:22.371 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:59:22.374 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 70.1861ms
+2024-09-16 18:59:22.378 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 18:59:22.389 +05:30 [INF] CORS policy execution successful.
+2024-09-16 18:59:22.391 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:59:22.392 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 18:59:22.400 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 18:59:22.402 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 5.7687ms
+2024-09-16 18:59:22.404 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 18:59:22.406 +05:30 [INF] HTTP POST /api/Product responded 400 in 15.0443 ms
+2024-09-16 18:59:22.408 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 29.6821ms
+2024-09-16 19:00:08.084 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:00:08.117 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:00:08.120 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 36.6284ms
+2024-09-16 19:00:08.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 19:00:08.134 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:00:08.135 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:00:08.137 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:00:08.184 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:00:08.284 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 19:00:08.289 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CrudWebApi.AppDbContext.AppDbContent'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 19:00:08.410 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 269.2832ms
+2024-09-16 19:00:08.412 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:00:08.414 +05:30 [ERR] HTTP GET /api/Product responded 500 in 278.8359 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 19:00:08.582 +05:30 [ERR] An error occured
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at CrudWebApi.Middlewares.ErrorMiddleWare.InvokeAsync(HttpContext context) in D:\Ashish\JQuery\CrudWebApi\Middlewares\ErrorMiddleware.cs:line 20
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 19:00:08.624 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 500 null application/json; charset=utf-8 500.8273ms
+2024-09-16 19:00:55.724 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:00:55.762 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:00:55.765 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 41.4748ms
+2024-09-16 19:00:55.776 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=utf-8 0
+2024-09-16 19:00:55.780 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:00:55.782 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:00:55.783 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:00:55.788 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 19:00:55.790 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 2.3994ms
+2024-09-16 19:00:55.802 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:00:55.804 +05:30 [INF] HTTP POST /api/Product responded 400 in 22.3244 ms
+2024-09-16 19:00:55.806 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 29.7969ms
+2024-09-16 19:02:06.668 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:02:06.683 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:02:06.685 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 17.1862ms
+2024-09-16 19:02:06.691 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 19:02:06.704 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:02:06.707 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:02:06.709 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:02:06.736 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:02:06.743 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 19:02:06.747 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'CrudWebApi.AppDbContext.AppDbContent'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 19:02:06.863 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 150.4023ms
+2024-09-16 19:02:06.872 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:02:06.875 +05:30 [ERR] HTTP GET /api/Product responded 500 in 168.0284 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 19:02:07.008 +05:30 [ERR] An error occured
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 52
+   at CrudWebApi.Controllers.ProductController.GetProducts() in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 22
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at CrudWebApi.Middlewares.ErrorMiddleWare.InvokeAsync(HttpContext context) in D:\Ashish\JQuery\CrudWebApi\Middlewares\ErrorMiddleware.cs:line 20
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+2024-09-16 19:02:07.043 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 500 null application/json; charset=utf-8 352.7816ms
+2024-09-16 19:02:23.415 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:02:23.420 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:02:23.422 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 7.0984ms
+2024-09-16 19:02:23.423 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=UTF-8 70
+2024-09-16 19:02:23.434 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:02:23.435 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:02:23.436 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:02:23.486 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:02:34.336 +05:30 [ERR] Failed executing DbCommand (24ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name], [Price], [Qty], [Unit])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-16 19:02:34.373 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CrudWebApi.AppDbContext.AppDbContent'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-09-16 19:02:34.589 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 11147.787ms
+2024-09-16 19:02:34.592 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:02:34.594 +05:30 [ERR] HTTP POST /api/Product responded 500 in 11158.8210 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.CreateProduct(Product product) in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 20
+   at CrudWebApi.Controllers.ProductController.Create(Product product) in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 55
+   at lambda_method17(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-16 19:02:34.727 +05:30 [ERR] An error occured
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.CreateProduct(Product product) in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 20
+   at CrudWebApi.Controllers.ProductController.Create(Product product) in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 55
+   at lambda_method17(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at CrudWebApi.Middlewares.ErrorMiddleWare.InvokeAsync(HttpContext context) in D:\Ashish\JQuery\CrudWebApi\Middlewares\ErrorMiddleware.cs:line 20
+2024-09-16 19:02:34.773 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 500 null application/json; charset=utf-8 11349.323ms
+2024-09-16 19:02:51.375 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:02:51.382 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:02:51.384 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 9.3808ms
+2024-09-16 19:02:51.389 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=UTF-8 70
+2024-09-16 19:02:51.417 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:02:51.425 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:02:51.446 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:02:51.468 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:03:20.798 +05:30 [ERR] Failed executing DbCommand (47ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name], [Price], [Qty], [Unit])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-16 19:03:20.807 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CrudWebApi.AppDbContext.AppDbContent'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-09-16 19:03:21.103 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 29653.4287ms
+2024-09-16 19:03:21.105 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:03:21.108 +05:30 [ERR] HTTP POST /api/Product responded 500 in 29683.0378 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:51b4d13d-d7cf-459b-9f11-7906f3d25aa5
+Error Number:208,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CrudWebApi.Services.ProductServices.CreateProduct(Product product) in D:\Ashish\JQuery\CrudWebApi\Services\ProductServices.cs:line 20
+   at CrudWebApi.Controllers.ProductController.Create(Product product) in D:\Ashish\JQuery\CrudWebApi\Controllers\ProductController.cs:line 55
+   at lambda_method17(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-09-16 19:04:03.781 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:04:03.816 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:04:04.213 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-09-16 19:04:04.236 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-09-16 19:04:04.238 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-09-16 19:04:04.239 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-09-16 19:04:04.258 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-09-16 19:04:04.270 +05:30 [INF] No migrations were applied. The database is already up to date.
+2024-09-16 19:05:06.981 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:07.014 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:07.330 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-09-16 19:05:07.352 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-09-16 19:05:07.355 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-09-16 19:05:07.355 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-09-16 19:05:07.374 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-09-16 19:05:25.291 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:25.329 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:25.434 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:25.434 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:44.961 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:44.996 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:05:45.314 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-09-16 19:05:45.335 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-09-16 19:05:45.337 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-09-16 19:05:45.338 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-09-16 19:05:45.356 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-09-16 19:05:45.368 +05:30 [INF] Applying migration '20240916133526_initialcreate'.
+2024-09-16 19:05:45.411 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [Qty] decimal(18,2) NOT NULL,
+    [Unit] int NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id])
+);
+2024-09-16 19:05:45.413 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240916133526_initialcreate', N'8.0.8');
+2024-09-16 19:05:52.915 +05:30 [INF] Now listening on: https://localhost:7043
+2024-09-16 19:05:52.955 +05:30 [INF] Now listening on: http://localhost:5141
+2024-09-16 19:05:53.006 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-16 19:05:53.009 +05:30 [INF] Hosting environment: Development
+2024-09-16 19:05:53.010 +05:30 [INF] Content root path: D:\Ashish\JQuery\CrudWebApi
+2024-09-16 19:05:53.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/index.html - null null
+2024-09-16 19:05:53.959 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/index.html - 200 null text/html;charset=utf-8 295.7721ms
+2024-09-16 19:05:53.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-16 19:05:53.972 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 11.4486ms
+2024-09-16 19:05:53.976 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/_vs/browserLink - null null
+2024-09-16 19:05:54.062 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.0099ms
+2024-09-16 19:05:54.098 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - null null
+2024-09-16 19:05:54.273 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 175.1314ms
+2024-09-16 19:06:12.220 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:06:12.240 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:06:12.245 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 24.539ms
+2024-09-16 19:06:12.249 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=UTF-8 70
+2024-09-16 19:06:12.255 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:06:12.261 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:06:12.288 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:06:12.536 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:06:16.125 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:06:16.129 +05:30 [WRN] No store type was specified for the decimal property 'Qty' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-16 19:06:16.923 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name], [Price], [Qty], [Unit])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-16 19:06:26.009 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 13467.3407ms.
+2024-09-16 19:06:26.021 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CrudWebApi.Models.Product'.
+2024-09-16 19:06:28.481 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 16187.131ms
+2024-09-16 19:06:28.486 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:06:28.493 +05:30 [INF] HTTP POST /api/Product responded 201 in 16234.1170 ms
+2024-09-16 19:06:28.506 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 201 null application/json; charset=utf-8 16256.6863ms
+2024-09-16 19:06:46.383 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:06:46.387 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:06:46.389 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.9663ms
+2024-09-16 19:06:46.391 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=UTF-8 61
+2024-09-16 19:06:46.398 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:06:46.399 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:06:46.400 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:06:46.433 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-16 19:06:46.448 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 45.3476ms
+2024-09-16 19:06:46.451 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:06:46.453 +05:30 [INF] HTTP POST /api/Product responded 400 in 54.1533 ms
+2024-09-16 19:06:46.456 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 400 null application/problem+json; charset=utf-8 65.1489ms
+2024-09-16 19:08:57.416 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:08:57.432 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:08:57.433 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 17.683ms
+2024-09-16 19:08:57.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 19:08:57.456 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:08:57.457 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:08:57.462 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:08:57.490 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:08:57.778 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 19:08:57.793 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 300.3687ms.
+2024-09-16 19:08:57.795 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 19:08:57.798 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 331.6453ms
+2024-09-16 19:08:57.809 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:08:57.811 +05:30 [INF] HTTP GET /api/Product responded 200 in 354.2511 ms
+2024-09-16 19:08:57.813 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 367.2213ms
+2024-09-16 19:09:18.726 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7043/api/Product - null null
+2024-09-16 19:09:18.730 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:09:18.731 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7043/api/Product - 204 null null 5.8149ms
+2024-09-16 19:09:18.733 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7043/api/Product - application/json;charset=UTF-8 83
+2024-09-16 19:09:18.741 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:09:18.743 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:09:18.745 +05:30 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CrudWebApi.Models.Product]] Create(CrudWebApi.Models.Product) on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:09:18.770 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:09:20.418 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Description], [Name], [Price], [Qty], [Unit])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-16 19:09:20.424 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.Create (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 1651.6169ms.
+2024-09-16 19:09:20.429 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'CrudWebApi.Models.Product'.
+2024-09-16 19:09:20.431 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.Create (CrudWebApi) in 1682.607ms
+2024-09-16 19:09:20.434 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.Create (CrudWebApi)'
+2024-09-16 19:09:20.435 +05:30 [INF] HTTP POST /api/Product responded 201 in 1692.4432 ms
+2024-09-16 19:09:20.437 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7043/api/Product - 201 null application/json; charset=utf-8 1704.4401ms
+2024-09-16 19:09:23.076 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7043/api/Product - application/json;charset=utf-8 null
+2024-09-16 19:09:23.082 +05:30 [INF] CORS policy execution successful.
+2024-09-16 19:09:23.083 +05:30 [INF] Executing endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:09:23.084 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CrudWebApi.Models.Product]]] GetProducts() on controller CrudWebApi.Controllers.ProductController (CrudWebApi).
+2024-09-16 19:09:23.108 +05:30 [INF] Executing action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) - Validation state: "Valid"
+2024-09-16 19:09:23.116 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p].[Name], [p].[Price], [p].[Qty], [p].[Unit]
+FROM [Products] AS [p]
+2024-09-16 19:09:23.120 +05:30 [INF] Executed action method CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.1771ms.
+2024-09-16 19:09:23.123 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CrudWebApi.Models.Product, CrudWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-16 19:09:23.126 +05:30 [INF] Executed action CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi) in 37.7141ms
+2024-09-16 19:09:23.131 +05:30 [INF] Executed endpoint 'CrudWebApi.Controllers.ProductController.GetProducts (CrudWebApi)'
+2024-09-16 19:09:23.133 +05:30 [INF] HTTP GET /api/Product responded 200 in 50.4231 ms
+2024-09-16 19:09:23.135 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7043/api/Product - 200 null application/json; charset=utf-8 61.0182ms

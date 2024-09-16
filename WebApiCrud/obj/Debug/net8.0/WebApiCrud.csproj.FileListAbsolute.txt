@@ -28,3 +28,4 @@ D:\Ashish\JQuery\WebApiCrud\obj\Debug\net8.0\refint\WebApiCrud.dll
 D:\Ashish\JQuery\WebApiCrud\obj\Debug\net8.0\WebApiCrud.pdb
 D:\Ashish\JQuery\WebApiCrud\obj\Debug\net8.0\WebApiCrud.genruntimeconfig.cache
 D:\Ashish\JQuery\WebApiCrud\obj\Debug\net8.0\ref\WebApiCrud.dll
+D:\Ashish\JQuery\WebApiCrud\obj\Debug\net8.0\WebApiCrud.sourcelink.json

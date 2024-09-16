@@ -259,3 +259,4 @@ D:\Ashish\JQuery\CrudWebApi\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
 D:\Ashish\JQuery\CrudWebApi\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\Ashish\JQuery\CrudWebApi\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\Ashish\JQuery\CrudWebApi\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Ashish\JQuery\CrudWebApi\obj\Debug\net8.0\CrudWebApi.sourcelink.json

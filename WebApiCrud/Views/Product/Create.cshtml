@@ -89,21 +89,22 @@
             _obj.price = parseFloat(price);
             _obj.qty = parseFloat(qty);
             _obj.unit = parseInt(unit);
-
-            console.log(JSON.stringify(_obj));
-
+            
             $.ajax({
-                type: 'POST',
+                type: 'Post',
+                data: JSON.stringify(_obj),
                 url: 'https://localhost:7043/api/Product',
-                dataType: JSON.stringify(_obj),
-                contentType: "application/json",
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                async: false,
                 success: function (data)
                 {
-                    debugger;
+                    window.location.href = "/product";
+                    alert("Product Created successfully");
                 },
                 failure: function (error)
                 {
-
+                    alert("An error occured unable to create product", error);
                 }
             });
         }
